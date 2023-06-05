@@ -2,6 +2,12 @@
 
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
+const log = console.log;
+const twitterClr = chalk.hex('#1da1f2').bold.inverse;
+const gmailClr = chalk.hex('#ea4335').bold.inverse;
+const githubClr = chalk.bgWhite.hex('333').inverse;
+const italic = chalk.italic;
 
 welcome({
 	title: pkgJSON.name,
@@ -14,4 +20,12 @@ welcome({
 	clear: true,
 });
 
-console.log('Barry Hanna');
+log(`
+${chalk.bgBlue.bold(' Barry Hanna ')}
+
+${italic('Developer, teacher and what not')}
+
+${githubClr(` Github: `)} http://github.com/barryhanna
+${gmailClr(` Email:  `)} barryahanna@gmail.com;
+${twitterClr(` Twitter: `)} none
+`);
