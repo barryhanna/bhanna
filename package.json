@@ -7,5 +7,17 @@
     },
     "dependencies": {
         "cli-welcome": "^2.2.2"
+    },
+    "keywords": [
+        "barry hanna",
+        "barry",
+        "hanna"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "barryhanna/bhanna",
+    "author": {
+        "name": "Barry Hanna",
+        "email": "barryahanna@gmail.com"
     }
 }
